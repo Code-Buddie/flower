@@ -1,0 +1,310 @@
+.is-default a {
+  color: #fff !important;
+}
+
+.is-default a:hover {
+  color: #006600 !important;
+}
+
+#navbarMenuHeroC {
+  color: #fff;
+  background-color: #006600;
+}
+
+.navbar-item {
+  font-size: 14px;
+}
+
+h1.title,
+h2.subtitle {
+  color: #ffffff00;
+}
+
+section.hero {
+  margin-top: 10px;
+}
+
+.is-active img.is-background {
+  width: auto !important; /*override the width below*/
+  width: 100%;
+  height: auto !important;
+  height: 100%;
+  clear: both;
+}
+
+div.carousel-item.has-background {
+  width: inherit !important;
+  height: inherit !important;
+}
+
+.is-semi .hero-carousel {
+  width: inherit;
+  height: initial;
+}
+
+.separator {
+  margin: auto;
+  padding: 20px;
+  width: 92%;
+}
+
+.separator hr {
+  height: 1px;
+  background-color: #000;
+}
+
+@media screen and (min-width: 769px),
+print {
+  .hero.is-semi .hero-body {
+    padding-bottom: 9rem;
+    padding-top: 9rem;
+  }
+
+  ul#navmenu,
+  ul.sub1,
+  ul.sub2 {
+    list-style-type: none;
+  }
+
+  ul#navmenu {
+    padding: 10px;
+  }
+
+  ul#navmenu li {
+    text-align: left;
+    position: relative;
+    float: left;
+    margin-right: 4px;
+  }
+
+  ul#navmenu a {
+    display: block;
+  }
+
+  .sub1,
+  .sub2 {
+    background-color: #006600;
+    width: 200px !important;
+  }
+
+  ul#navmenu .sub1 a {
+    margin-top: 5px;
+    width: 200px;
+    padding: 10px;
+    cursor: default;
+  }
+
+  ul#navmenu .sub2 a {
+    padding-left: 10px;
+    width: 200px;
+    cursor: pointer !important;
+  }
+
+  ul#navmenu .sub2 a:hover {
+    border-left: 4px solid #ff6600;
+  }
+
+  ul#navmenu li:hover>a {
+    background-color: #fff;
+    color: #006600 !important;
+  }
+
+  ul#navmenu ul.sub1 {
+    width: 130px;
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+  }
+
+  ul#navmenu ul.sub2 {
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 199px;
+  }
+
+  ul#navmenu li:hover .sub1 {
+    display: block;
+  }
+
+  ul#navmenu .sub1 li:hover .sub2 {
+    display: block;
+  }
+
+  .navbar-middle {
+    margin-left: 200px;
+  }
+}
+
+.large {
+  width: 200px;
+  height: auto;
+}
+
+.product-category {
+  width: 200px;
+  padding: 10px 20px;
+}
+
+.product-category:hover {
+  background-color: #ffffff;
+  color: #006600 !important;
+}
+
+.large p {
+  line-height: 1.5em;
+  padding: 10px;
+}
+
+.product-options {
+  position: absolute !important;
+  left: 200px !important;
+  top: -47px;
+  background-color: #006600;
+  width: 300px !important;
+}
+
+.product-options:hover {
+  color: #006600;
+  background-color: #ffffff;
+}
+
+.is-mobile-visible {
+  display: none;
+}
+
+@media (max-width: 1087px) {
+  .navbar-end a.is-active {
+    color: #006600 !important;
+    background-color: #fff;
+  }
+
+  .is-semi,
+  .main-logo {
+    display: none;
+  }
+
+  .is-mobile-visible {
+    display: inherit;
+    background-color: #006600 !important;
+    color: #ffffff;
+  }
+
+  h1.title,
+  h2.subtitle {
+    color: #006600;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1087px) {
+  .navbar-menu {
+    min-height: 100px;
+  }
+
+  a.navbar-item.is-active {
+    color: #006600 !important;
+  }
+
+}
+
+p {
+  color: #ffffff !important;
+  cursor: pointer;
+}
+
+.navbar-dropdown {
+  background-color: #006600 !important;
+  border-radius: 0 !important;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 769px) {
+
+    a.navbar-item.is-active {
+    color: #006600 !important;
+  }
+
+  a.navbar-item:hover {
+    color: #ff6600 !important;
+  }
+
+  li#dropdownButton,
+  ul.sub1,
+  ul.sub2 {
+    list-style-type: none;
+  }
+
+  ul#navmenu {
+    padding: 10px;
+  }
+
+  li#dropdownButton li {
+    text-align: left;
+    position: relative;
+    float: left;
+    margin-right: 4px;
+  }
+
+  li#dropdownButton a {
+    display: block;
+  }
+
+  .sub1,
+  .sub2 {
+    background-color: #006600;
+    width: 100% !important;
+  }
+
+  li#dropdownButton ul.sub1 a {
+    margin-top: 5px;
+    width: 100% !important;
+    padding: 10px;
+  }
+
+  li#dropdownButton ul.sub2 a {
+    padding-left: 10px;
+    width: 100% !important;
+  }
+
+  li#dropdownButton ul li:hover>a {
+    background-color: #fff;
+    color: #006600 !important;
+  }
+
+  li#dropdownButton ul.sub1 {
+    width: 100% !important;
+    display: inline-block;
+    position: relative;
+    left: 20px;
+  }
+
+  li#dropdownButton ul.sub2 {
+    width: 500px !important;
+    display: inline-block;
+    position: relative;
+    left: 20px;
+  }
+
+  ul.sub2 li {
+    width: 100%;
+  }
+
+  ul.sub2 li a:hover {
+    border-left: 5px solid #ff6600;
+    transition: border-left .2s ease-in;
+  }
+
+  li#dropdownButton li:hover .sub1 {
+    display: block;
+  }
+
+  li#dropdownButton .sub1 li:hover .sub2 {
+    display: block;
+  }
+
+}

@@ -1,0 +1,6 @@
+@media (max-width: 1079px){
+    .product-container{
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+}

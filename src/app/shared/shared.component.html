@@ -1,0 +1,129 @@
+<div class="hero-head is-dark">
+  <nav class="navbar is-default">
+    <div class="container">
+      <div class="navbar-brand">
+          <a id="navbar-toggle" class="navbar-burger">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+      </div>
+      <div id="navbarMenuHeroC" class="navbar-menu">
+        <div class="navbar-start navbar-middle">
+          <ul id="navmenu">
+            <li>
+              <a id="1-route" routerLink="/home" routerLinkActive="is-active" routerLinkActiveOptions="{exact: true}" class="navbar-item">
+                Home
+              </a>
+            </li>
+            <li id="dropdownButton">
+              <a class="navbar-item">
+                All products
+              </a>
+              <ul class="sub1">
+                <li *ngFor="let module of modules"><a>{{module.name}}</a>
+                  <ul class="sub2">
+                    <li *ngFor="let option of module.options"><a class="last-route" routerLink="/{{module.link}}/{{option}}">{{option}}</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a id="2-route" routerLink="/buy" routerLinkActive="is-active" routerLinkActiveOptions="{exact: true}" class="navbar-item">
+                Where to Buy our Products
+              </a>
+            </li>
+            <li>
+              <a id="3-route" routerLink="/natural" routerLinkActive="is-active" routerLinkActiveOptions="{exact: true}" class="navbar-item">
+                Natural Pyrethrum
+              </a>
+            </li>
+            <li>
+              <a id="4-route" routerLink="/distributors" routerLinkActive="is-active" routerLinkActiveOptions="{exact: true}" class="navbar-item">
+                Distributors Required
+              </a>
+            </li>
+            <li>
+              <a id="5-route" routerLink="/exports" routerLinkActive="is-active" routerLinkActiveOptions="{exact: true}" class="navbar-item">
+                Exports
+              </a>
+            </li>
+            <li>
+              <a id="6-route" routerLink="/careers" routerLinkActive="is-active" routerLinkActiveOptions="{exact: true}" class="navbar-item">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a id="7-route" routerLink="/contact" routerLinkActive="is-active" routerLinkActiveOptions="{exact: true}" class="navbar-item">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<section class="hero is-medium">
+  <!-- Hero content: will be in the middle -->
+  <div class="container padded-top">
+    <section class="hero is-semi has-carousel">
+      <div id="banner-carousel" class="hero-carousel carousel-animated carousel-animate-slide" data-autoplay="true">
+        <div class='carousel-container'>
+          <div class='carousel-item has-background is-active'>
+            <img class="is-background" src="../../../assets/asset 1.jpeg" alt="" />
+          </div>
+          <div *ngFor="let carouselItem of carouselItems" class='carousel-item has-background'>
+            <img class="is-background" src="../../../assets/slides/{{carouselItem.link}}.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-body is-medium">
+        <div class="columns is-mobile">
+          <div class="column is-half-desktop">
+            <div class="container has-text-centered">
+              <h1 class="title has-text-centerd">
+                Kapi Kenya Limited
+              </h1>
+              <h1 class="title has-text-centerd">
+                  Kapi Kenya Limited
+                </h1>
+              <h2 class="subtitle has-text-amarelo">
+                Manufacturing quality insecticidal products since 1964
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section class="hero is-medium is-default is-mobile-visible">
+  <div class="hero-body is-medium">
+    <div class="columns is-mobile">
+      <div class="column is-half-desktop">
+        <div class="container has-text-centered">
+          <h1 class="title has-text-centerd">
+            Kapi Kenya Limited
+          </h1>
+          <h2 class="subtitle has-text-amarelo">
+            Manufacturing quality insecticidal products since 1964
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="separator">
+  <hr>
+</div>
+
+<div class="main-logo">
+  <a href="">
+    <img class="logo-image" src="../../assets/logo.png" alt="logo">
+  </a>
+</div>

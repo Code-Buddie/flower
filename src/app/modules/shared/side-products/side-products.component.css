@@ -1,0 +1,60 @@
+.menu{
+  width: inherit;
+  background-color: #006600;
+  cursor: pointer;
+  margin: 0;
+  /* outline: 1px solid #006600; */
+}
+
+.menu a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu .subtitle{
+  font-size: 18px;
+  display: block;
+  padding: 10px 20px;
+  margin: 0;
+  width: 100%;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.menu .subtitle:hover{
+  color: #ffffff;
+  background-color: #0B4516;
+}
+
+.options a{
+  color: #006600 !important;
+  background-color: #ffffff;
+  border-bottom: 1px solid #006600;
+  /* border-left: 10px solid #ff6600; */
+  padding: 5px 25px;
+  display: block;
+  width: 100%;
+}
+
+.options a:hover{
+  color: #ffffff !important;
+  background-color: #ff6600;
+}
+
+#mosquito-control, #pet-shampoos, #public-health-insecticides, #application-equipment, #agricultural-insecticides{  
+  overflow: hidden;
+  border-bottom: 1px solid #ffffff;
+}
+
+.manual{
+  max-height: 0px;
+  transition: max-height 0.5s ease-out;
+}
+
+.auto-height{
+  height:auto;
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}
+
+

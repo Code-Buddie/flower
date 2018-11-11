@@ -1,0 +1,18 @@
+ul:not(a){
+  font-weight: 500;
+}
+
+ul a{
+  font-weight: normal;
+}
+
+.footer{
+  margin: 0;
+  padding: 10px;
+  background-color: #000000;
+  color: #696969;
+}
+
+abbr{
+  text-decoration: none;
+}

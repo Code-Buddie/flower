@@ -1,0 +1,48 @@
+<section class="container">
+  <div class="columns">
+    <div class="column">
+      <app-side-products></app-side-products>
+    </div>
+    <div class="column is-half">
+      <p class="subtitle">Our products are available at the following outlets:</p>
+      <div class="columns is-centered is-multiline">
+        <div class="column is-half">
+          <img src="../../../assets/nakumatt.png" alt="Placeholder image">
+        </div>
+        <div class="column is-half">
+          <img src="../../../assets/tuskys.png" alt="Placeholder image">
+        </div>
+        <div class="column is-half">
+          <img src="../../../assets/naivas.png" alt="Placeholder image">
+        </div>
+        <div class="column is-half">
+          <img src="../../../assets/uchumi.jpg" alt="Placeholder image">
+        </div>
+        <div class="column is-one-fifth">
+          <img src="../../../assets/chandarana_logo.png" alt="Placeholder image">
+        </div>
+        <br>
+        <p>Incase you have any problems purchasin your favourite Kapi Limited product, 
+          please call us on 051 221 7134/221 7228 or 0726 114 140 0737 127 853</p>
+        <div class="column is-half" *ngFor="let salesPerson of salesPeople">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-title">
+                {{salesPerson.region}}
+              </div>
+            </div>
+            <div class="card-content">
+              <p>{{salesPerson.person}}</p>
+              <p>{{salesPerson.tel}}</p>
+              <p>{{salesPerson.mail}}@kapiltd.co.ke</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+        <p class="subtitle">Downloads</p>
+      <app-side-downloads></app-side-downloads>
+    </div>
+  </div>
+</section>
